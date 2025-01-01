@@ -1,5 +1,13 @@
 %%writefile qa_selenium_test.py
-""" Test to validate table search functionality."""
+""" Test to validate table search functionality.
+Test_steps:
+  1.Initialize the Selenium WebDriver and set up the browser environment in headless mode.
+  2.Open the target URL.
+  3.Check if the table and search box are visible and enabled.
+  4.Search for the term "New York" in the search box.
+  5.Verify that the search results show only "New York" entries.
+  6.Check if the total entries text is correctly updated based on the search entry.
+"""
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
